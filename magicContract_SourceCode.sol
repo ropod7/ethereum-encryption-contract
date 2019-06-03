@@ -4,9 +4,9 @@ pragma solidity >=0.5.1 <0.6.0;
 /// @title Example of MagicContract;
 /// All definitions aimed to show principle of contract;
 /// Contract compilation is multilevel process described in mccompiler.py;
-/// Source Code wich used in compilation described in:
+/// Source Code which was used in compilation described in:
 /// magic/contracts/publicContract.sol for Public contract and in
-/// magic/contracts/magicContract.sol for Private contract;
+/// magic/contracts/magicContract.sol for Private contract use;
 */
 contract MagicContract {
     // BEGIN of Randomly generated definitions
