@@ -76,7 +76,7 @@ class MagicContract():
     # fill the tail inside the LATEST PART OF INPUT STRING. String that aimed to
     # encode inside the given contract.
     # Range between 0xe0000 and 0xfffff has empty cells in UTF table.
-    # eg: each randomly generated 5 bytes joined to 25 bytes word.
+    # eg: each randomly generated 2.5 bytes joined to 25 bytes word.
     def zeroesRemovalGen(self):
         gen = [randrange(0xe0000, 0xfffff) for i in range(10)]
         output = "".join(map(self._zeroesRemovalMapper, gen))
