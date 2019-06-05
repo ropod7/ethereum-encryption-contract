@@ -21,7 +21,7 @@ text = "Hello World!"
     
 hexified = hexlify((text).encode()).decode()
     
-word_to_encrypt = "0x" + hexified + "00" * (25 - len(hexified) // 2)
+word_to_encrypt = "0x" + hexified + "0" * (50 - len(hexified))
 print(word_to_encrypt) 
 
 ````
