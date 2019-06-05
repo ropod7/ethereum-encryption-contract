@@ -3,7 +3,9 @@
 The Principle used in etherecho.com ethereum dapp, which is deprecated as a project and will be removed soon.
 The Source Code of project is open and may be used in any type of multilevel contract system of projects based on Ethereum Blockchain to ease encrypt and decrypt texts at their side.
 
-The principles of compilation describes in mccompiler.py and principles of usage may find in doc string of contract source code.
+The principles of compilation describes in `mccompiler.py` and principles of usage may find in doc string of contract source code.
+
+`Notice: For encryption and decryption process no need make transaction, just method.call(). Mechanism works as fast 'black box': just push input data into 'encrypt', or 'decrypt' function and get back output result as fast as it possible.`
 
 Base principle of contract is simple: encrypt and decrypt text back, but at the client side:
 - (before encryption) Text should be 'hexlified' and decoded from human readable 'UTF-8' string to bytes string;
@@ -26,7 +28,7 @@ print(word_to_encrypt)
 
 ````
 
-returns '0x48656c6c6f20576f726c642100000000000000000000000000'
+`returns '0x48656c6c6f20576f726c642100000000000000000000000000'`
 
 Which is exact what we need to push into 'encrypt' function of contract.
 
